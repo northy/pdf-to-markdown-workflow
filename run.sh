@@ -8,7 +8,7 @@ pip install pymupdf
 
 echo "Getting split.py"
 
-wget -quiet -O split.py https://raw.githubusercontent.com/northy/pdf-to-markdown-workflow/master/split.py
+wget -q -O split.py https://raw.githubusercontent.com/northy/pdf-to-markdown-workflow/master/split.py
 
 echo "Running split.py"
 
