@@ -1,0 +1,29 @@
+name: PDF To Markdown workflow
+description: Updates README.md generating PDF images
+author: northy
+
+inputs:
+  pdf_input:
+    description: 'Input PDF file'
+    default: 'source.pdf'
+    required: false
+  output_folder:
+    description: 'Output pngs folder'
+    default: 'output_pngs'
+    required: false
+  source_md:
+    description: "Source markdown file"
+    default: 'source.md'
+    required: false
+  output_md:
+    description: "Output markdown file"
+    default: 'README.md'
+    required: false
+
+branding:
+  icon: 'activity'
+  color: 'yellow'
+
+runs:
+  using: 'node12'
+  main: 'run.js'
