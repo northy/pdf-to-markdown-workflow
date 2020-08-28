@@ -3,7 +3,7 @@ set -e
 
 echo "Fetching required libraries"
 
-python -m pip install --update pip
+python -m pip install --upgrade pip
 pip install pymupdf
 
 echo "Getting split.py"
