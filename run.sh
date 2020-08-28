@@ -22,7 +22,7 @@ git config --global user.email "action@github.com"
 git config --global user.name "GitHub Actions Bot"
 
 git add ${INPUT_OUTPUT_FOLDER} ${INPUT_OUTPUT_MD} > /dev/null
-git commit -m "Compile MD" --quiet
+git diff-index --quiet HEAD || git commit -m "Compile MD" --quiet
 
 remote_repo="https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 
