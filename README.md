@@ -1,7 +1,7 @@
 # PDF To Markdown Workflow
 
 ## How to use
-* Add the following lines to your source markdown file. The workflow will replace these comments with the actual blog post list:
+* Add the following lines to your source markdown file. The workflow will fill the lines between these comments with the actual image links:
 
 ```md
 <!-- PDF-TO-MARKDOWN:START -->
@@ -42,3 +42,7 @@ jobs:
 | output_folder | output_pngs   | Output PNGs folder (don't add trailing "/")              |    Yes   |
 | source_md     | source.md     | Source Markdown File                                     |    Yes   |
 | output_md     | README.md     | Output Markdown File (CAN be the same file as the input) |    Yes   |
+
+### Inspired from:
+* [Blog post workflow](https://github.com/gautamkrishnar/blog-post-workflow)
+* [Github activity readme](https://github.com/jamesgeorge007/github-activity-readme/)
