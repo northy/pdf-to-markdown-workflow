@@ -38,10 +38,11 @@ jobs:
 
 | Option        | Default Value | Description                                              | Required |
 |---------------|---------------|----------------------------------------------------------|----------|
-| pdf_input     | source.pdf    | Input PDF file path                                      |    Yes   |
-| output_folder | output_pngs   | Output PNGs folder (don't add trailing "/")              |    Yes   |
-| source_md     | source.md     | Source Markdown File                                     |    Yes   |
-| output_md     | README.md     | Output Markdown File (CAN be the same file as the input) |    Yes   |
+| pdf_input     |               | Input PDF file path                                      |    Yes   |
+| output_folder | 'output_pngs' | Output PNGs folder (don't add trailing "/")              |     No   |
+| source_md     | 'source.md'   | Source Markdown File                                     |    Yes   |
+| output_md     | 'README.md'   | Output Markdown File (CAN be the same file as the input) |     No   |
+| root_folder   | ''            | Change root output folder (useful for github pages)      |     No   |
 
 ### Inspired from:
 * [Blog post workflow](https://github.com/gautamkrishnar/blog-post-workflow)

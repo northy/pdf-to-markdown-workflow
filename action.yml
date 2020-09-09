@@ -5,7 +5,10 @@ author: northy
 inputs:
   pdf_input:
     description: 'Input PDF file'
-    default: 'source.pdf'
+    required: true
+  root_folder:
+    description: "Root output folder"
+    default: ''
     required: false
   output_folder:
     description: 'Output pngs folder'
@@ -13,8 +16,7 @@ inputs:
     required: false
   source_md:
     description: "Source markdown file"
-    default: 'source.md'
-    required: false
+    required: true
   output_md:
     description: "Output markdown file"
     default: 'README.md'
