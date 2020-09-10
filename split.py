@@ -4,9 +4,7 @@ pdf_input = sys.argv[1]
 output_folder = sys.argv[2]
 source_md = sys.argv[3]
 output_md = sys.argv[4]
-output_folder_root=output_folder
-if len(sys.argv)>5 :
-    output_folder_root = sys.argv[5]+output_folder_root
+output_folder_root = sys.argv[5]+output_folder
 
 if not os.path.exists(output_folder_root):
     os.makedirs(output_folder_root)

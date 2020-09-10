@@ -12,7 +12,7 @@ wget -q -O split.py https://raw.githubusercontent.com/northy/pdf-to-markdown-wor
 
 echo "Running split.py"
 
-python split.py ${INPUT_PDF_INPUT} ${INPUT_OUTPUT_FOLDER} ${INPUT_SOURCE_MD} ${INPUT_OUTPUT_MD} ${INPUT_ROOT_FOLDER}
+python split.py "${INPUT_PDF_INPUT}" "${INPUT_OUTPUT_FOLDER}" "${INPUT_SOURCE_MD}" "${INPUT_OUTPUT_MD}" "${INPUT_ROOT_FOLDER}"
 
 rm split.py
 
