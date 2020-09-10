@@ -5,6 +5,7 @@ output_folder = sys.argv[2]
 source_md = sys.argv[3]
 output_md = sys.argv[4]
 output_folder_root = sys.argv[5]+output_folder
+line_end = sys.argv[6].replace('\\n','\n')
 
 if not os.path.exists(output_folder_root):
     os.makedirs(output_folder_root)
@@ -31,7 +32,7 @@ while True :
         pix = page.getPixmap()
         output = f"{output_folder}/page{i}.png"
         output_root = f"{output_folder_root}/page{i}.png"
-        imgs.append(f'![Page {i}]({output} "Page {i}")\n---\n')
+        imgs.append(f'![Page {i}]({output} "Page {i}")\n{line_end}')
         pix.writePNG(output_root)
     except :
         break

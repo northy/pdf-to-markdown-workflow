@@ -21,6 +21,10 @@ inputs:
     description: "Output markdown file"
     default: 'README.md'
     required: false
+  line_end:
+    description: "Line end"
+    default: '---\n'
+    required: false
 
 branding:
   icon: 'activity'

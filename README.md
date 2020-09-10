@@ -43,6 +43,7 @@ jobs:
 | source_md     | 'source.md'   | Source Markdown File                                     |    Yes   |
 | output_md     | 'README.md'   | Output Markdown File (CAN be the same file as the input) |     No   |
 | root_folder   | ''            | Change root output folder (useful for github pages)      |     No   |
+| line_end      | '---\n'       | Appends line end to every image line on markdown         |     No   |
 
 ### Inspired from:
 * [Blog post workflow](https://github.com/gautamkrishnar/blog-post-workflow)
