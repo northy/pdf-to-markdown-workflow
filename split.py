@@ -28,12 +28,12 @@ i=1
 imgs = []
 while True :
     try :
-        page = doc.loadPage(i-1)
-        pix = page.getPixmap()
+        page = doc.load_page(i-1)
+        pix = page.get_pixmap()
         output = f"{output_folder}/page{i}.png"
         output_root = f"{output_folder_root}/page{i}.png"
         imgs.append(f'![Page {i}]({output} "Page {i}")\n{line_end}')
-        pix.writePNG(output_root)
+        pix.save(output_root)
     except :
         break
     i+=1
