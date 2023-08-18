@@ -18,8 +18,8 @@ rm split.py
 
 echo "Commiting and pushing"
 
-git config --global user.email "action@github.com"
-git config --global user.name "GitHub Actions Bot"
+git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+git config --global user.name "github-actions[bot]"
 
 git add ${INPUT_ROOT_FOLDER}${INPUT_OUTPUT_FOLDER} ${INPUT_OUTPUT_MD} > /dev/null
 git diff-index --quiet HEAD || git commit -m "Compile MD" --quiet
